@@ -243,3 +243,36 @@ h6,
         background: var(--primary);
     }
 }
+
+
+.floating-icons {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.floating-icons a {
+    color: white;
+    font-size: 22px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-float {
+    background-color: #25D366; /* WhatsApp Green */
+}
+
+.call-float {
+    background-color: #1F8EE4; /* Slightly darker for Call */
+}
+
+.floating-icons a:hover {
+    transform: scale(1.1);
+}
