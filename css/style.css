@@ -243,3 +243,14 @@ h6,
         background: var(--primary);
     }
 }
+
+.cursor {
+  display: inline-block;
+  color: #000;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
