@@ -36,6 +36,23 @@
     
 
 <body>
+    <script>
+        // Collapse navbar on nav-item click in mobile view
+        document.addEventListener("DOMContentLoaded", function () {
+            var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+            var navbarCollapse = document.getElementById("navbarCollapse");
+    
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                });
+            });
+        });
+    </script>
+    
     <!-- Header Start -->
     <div class="container-fluid bg-dark px-0 fixed-top">
         <div class="row gx-0">
@@ -104,6 +121,16 @@
         </div>
     </div>
     <!-- Header End -->
+
+    <!-- Floating WhatsApp and Call Icons -->
+<div class="floating-icons">
+    <a href="https://wa.me/919373319078" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:919373319078" class="call-float">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
 
 
   <!-- Carousel Start -->
